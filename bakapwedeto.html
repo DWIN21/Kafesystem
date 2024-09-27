@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KA'fe Coffee House</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Ka'fe logo.png">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background: url('KAfe background.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #4b3832;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #8e6e53;
+            color: #f5f0e1;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Times New Roman', cursive;
+        }
+
+        .navigation a {
+            color: #f5f0e1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .navigation a:hover {
+            color: #d9b38c;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            color: #f5f0e1;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            background-color: #d9b38c;
+            color: #4b3832;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #b08a60;
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #4b3832;
+        }
+
+        .featured-items, .reviews {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .featured-item, .review {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            width: 250px;
+            text-align: left;
+        }
+
+        .featured-item img, .review img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .featured-item h3, .review h3 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #4b3832;
+        }
+
+        .featured-item p, .review p {
+            font-size: 16px;
+            color: #4b3832;
+        }
+
+        .contact {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact p {
+            font-size: 16px;
+            color: #4b3832;
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            color: rgb(81, 60, 32);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">KA'fe Coffee House</h1>
+        <nav class="navigation">
+            <a href="Home_test.html">Home</a>
+            <a href="Menu_test.html">Menu</a>
+            <a href="Inventory_test.html">Inventory</a>
+            <a href="POS_test.html">POS</a>
+            <a href="Report_test.html">Report</a>
+            <a href="About_us.html">About us</a>
+            <a href="login_test.html" class="log-out">Log Out</a>
+            <style>
+                .log-out {
+                    padding: 10px;
+                    background-color: #d9b38c;
+                    color: #4b3832;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    font-size: 18px;
+                }
+            </style>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1>Welcome to KA'fe Coffee House</h1>
+        <p>Your perfect place to relax and enjoy the best coffee in town</p>
+        <button onclick="window.location.href='Menu_test.html'">View Our Menu</button>
+    </div>
+    <section class="section featured-items">
+        <h2>Featured Items</h2>
+        <div class="featured-item">
+            <img src="coffee1.jpg" alt="Featured Coffee">
+            <h3>Espresso</h3>
+            <p>Rich and bold espresso to kickstart your day.</p>
+        </div>
+        <div class="featured-item">
+            <img src="dessert1.jpg" alt="Featured Dessert">
+            <h3>Chocolate Cake</h3>
+            <p>Delicious and decadent chocolate cake.</p>
+        </div>
+        <div class="featured-item">
+            <img src="coffee2.jpg" alt="Featured Coffee">
+            <h3>Cappuccino</h3>
+            <p>Perfect blend of coffee, milk, and froth.</p>
+        </div>
+    </section>
+    <section class="section about-us">
+        <h2>About Us</h2>
+        <p>At KA'fe Coffee House, we believe in serving the best quality coffee and desserts to our customers. Our cozy atmosphere and friendly staff make us the perfect spot to unwind or catch up with friends. Come visit us and experience the difference!</p>
+    </section>
+    <section class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <img src="customer1.jpg" alt="Customer 1">
+            <h3>Jane Doe</h3>
+            <p>"KA'fe Coffee House is my favorite place to relax with a cup of coffee. The atmosphere is wonderful and the staff are always friendly."</p>
+        </div>
+        <div class="review">
+            <img src="customer2.jpg" alt="Customer 2">
+            <h3>John Smith</h3>
+            <p>"The desserts at KA'fe are absolutely delicious. I can't get enough of their chocolate cake!"</p>
+        </div>
+    </section>
+    <section class="section contact">
+        <h2>Contact Us</h2>
+        <p>Page · Coffee shop</p>
+        <p>San Jose, Philippines</p>
+        <p>0956 490 2330</p>
+        <p>Email: kafecoffeehouse@gmail.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Ka'fe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
